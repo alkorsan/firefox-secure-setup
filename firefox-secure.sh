@@ -1,7 +1,7 @@
 #!/bin/bash
 USER_JS="user.js"
-LINUX_CONFIG_DIR="~/.mozilla/firefox/*.default/"
-MAC_CONFIG_DIR="~/Library/Application\ Support/Firefox/Profiles/*.default/"
+LINUX_CONFIG_DIR='~/.mozilla/firefox/*.default/'
+MAC_CONFIG_DIR='~/Library/Application\ Support/Firefox/Profiles/*.default/'
 
 if [ -d "$LINUX_CONFIG_DIR" ]; then
     cd "$LINUX_CONFIG_DIR/$USER_JS"
@@ -9,6 +9,7 @@ elif [ -d "$MAC_CONFIG_DIR" ]; then
     cd "$MAC_CONFIG_DIR/$USER_JS"
 else
     echo "Could not find firefox configuration. Exiting."
+    exit 0
 fi
 
 > $USER_JS
