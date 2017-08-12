@@ -12,6 +12,9 @@ else
 fi
 
 > $USER_JS
+
+#Thanks https://github.com/pyllyukko/user.js
+
 #PREF: Disable Service Workers
 #https://developer.mozilla.org/en-US/docs/Web/API/Worker
 #https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker_API
